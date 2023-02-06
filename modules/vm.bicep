@@ -63,7 +63,7 @@ var nicName = 'nic-${systemCode}-${env}'
 var addressPrefix = '10.0.0.0/16'
 var subnetName = 'Subnet'
 var subnetPrefix = '10.0.0.0/24'
-var virtualNetworkName = 'MyVNET'
+var virtualNetworkName = 'vnet-${systemCode}-${env}'
 
 resource vn 'Microsoft.Network/virtualNetworks@2021-02-01' = {
   name: virtualNetworkName
