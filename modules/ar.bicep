@@ -67,7 +67,7 @@ resource metricAlert 'Microsoft.Insights/metricAlerts@2018-03-01' = {
       allOf: [
         {
           name: '1st criterion'
-          metricName: 'Metric1'
+          metricName: 'VmAvailabilityMetric'
           dimensions: []
           operator: 'LessThanOrEqual'
           threshold: 1
