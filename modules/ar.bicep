@@ -69,7 +69,7 @@ resource metricAlert 'Microsoft.Insights/metricAlerts@2018-03-01' = {
           name: '1st criterion'
           metricName: 'VmAvailabilityMetric'
           dimensions: []
-          operator: 'LessThanOrEqual'
+          operator: 'LessThan'
           threshold: 1
           timeAggregation: 'Average'
           criterionType: 'StaticThresholdCriterion'
