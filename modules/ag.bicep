@@ -18,7 +18,7 @@ param emailAddress string
 @description('Name of email Receivers')
 param emailReceiversName string
 
-resource symbolicname 'Microsoft.Insights/actionGroups@2022-06-01' = {
+resource actionGroup 'Microsoft.Insights/actionGroups@2022-06-01' = {
   name: agName
   location: 'Global'
   properties: {
@@ -34,6 +34,9 @@ resource symbolicname 'Microsoft.Insights/actionGroups@2022-06-01' = {
 
   }
 }
+
+@description('action group id')
+output id string = actionGroup.id
 
 // Action groups
 // https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scenarios-monitoring

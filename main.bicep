@@ -38,7 +38,7 @@ module vmModule 'modules/vm.bicep' = {
 }
 
 // deploy action groups.
-module maModule 'modules/ag.bicep' = {
+module agModule 'modules/ag.bicep' = {
   scope: rg
   name: 'Deploy_action_groups'
   params: {
@@ -46,5 +46,18 @@ module maModule 'modules/ag.bicep' = {
     emailReceiversName: emailReceiversName
     env: env
     systemCode: systemCode
+  }
+}
+
+// deploy alert rule.
+module alModule 'modules/ar.bicep' = {
+  scope: rg
+  name: 'Deploy_alert_rule'
+  params: {
+    location: location
+    env: env
+    systemCode: systemCode
+    resourceId: vmModule.outputs.id
+    actionGroupId: agModule.outputs.id
   }
 }
