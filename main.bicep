@@ -15,8 +15,8 @@ param adminUsername string = 'azureuser'
 param adminPassword string
 
 // Parameters for Monitor Alerts
-param emailAddress string = 'hawk@sample.com'
-param emailReceiversName string = 'hogehoge sample'
+param emailAddress string = '${systemCode}@sample.com'
+param emailReceiversName string = '${systemCode}-${env}'
 
 // deploy resource groups.
 resource rg 'Microsoft.Resources/resourceGroups@2022-09-01' = {
