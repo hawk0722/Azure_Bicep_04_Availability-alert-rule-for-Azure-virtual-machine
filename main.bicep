@@ -14,7 +14,7 @@ param adminUsername string = 'azureuser'
 @secure()
 param adminPassword string
 
-// Parameters for Monitor Alerts
+// Parameters for action groups
 param emailAddress string = '${systemCode}@sample.com'
 param emailReceiversName string = '${systemCode}-${env}'
 

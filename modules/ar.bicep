@@ -94,8 +94,3 @@ resource metricAlert 'Microsoft.Insights/metricAlerts@2018-03-01' = {
     ]
   }
 }
-
-// Alet rule
-// https://learn.microsoft.com/en-us/azure/templates/microsoft.insights/2018-03-01/metricalerts?pivots=deployment-language-bicep
-// https://learn.microsoft.com/ja-jp/azure/azure-monitor/alerts/resource-manager-alerts-metric?tabs=bicep
-// https://learn.microsoft.com/ja-jp/azure/azure-monitor/vm/tutorial-monitor-vm-alert-availability

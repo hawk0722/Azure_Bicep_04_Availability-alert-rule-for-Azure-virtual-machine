@@ -37,7 +37,3 @@ resource actionGroup 'Microsoft.Insights/actionGroups@2022-06-01' = {
 
 @description('action group id')
 output id string = actionGroup.id
-
-// Action groups
-// https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/scenarios-monitoring
-// https://learn.microsoft.com/ja-jp/azure/azure-monitor/vm/tutorial-monitor-vm-alert-availability
